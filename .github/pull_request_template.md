@@ -20,7 +20,7 @@ Hint: you can get this from /var/cache/arc/installed/<pkg_name>@<pkg_version>
 </details>
 
 
-### For new packages
+## For new packages
 
 <!--
 Delete this section if you are not submitting a new package.
