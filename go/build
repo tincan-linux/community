@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+## This build currently only works for amd64/x86_64 systems
+
+# Move the target go source from './go' to './goroot' to prevent confict
+mv go goroot
+
+# Extract the depended version for bootstrapping
+tar -xvf ./go1.22.0.linux-amd64.tar.gz
+
+# Move into the target source directory
+cd goroot/src
+
+# Build the target Go version and move it to '/usr/bin'
+./make.bash
+mv "$HOME/go/bin/*" "$1/usr/bin"
+rm -rf "$HOME/go"
