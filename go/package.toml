@@ -1,13 +1,10 @@
 [meta]
 version = "1.25.5"
 maintainer = "vaelixd <vaelixd@proton.me>"
-sources = [
-  "https://go.dev/dl/go1.25.5.src.tar.gz",
-  "files/go1.22.0.linux-amd64.tar.gz",
-]
+sources = ["https://go.dev/dl/go1.25.5.src.tar.gz", "files/go"]
 checksums = [
   "2678ba054053bafd10f56c003254764d06456fdf6f5230234a716fea314a60f2",
-  "3aaa5ad5670bf8f956c52dbfef591a690386c54d0896bd7b90484f2a9e021dd3",
+  "070d4be6c8940f9f4f96a83dcab891ba1e53d0b989e6843e76cfe4b4040c872a",
 ]
 
 [deps]
