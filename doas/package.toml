@@ -1,0 +1,14 @@
+[meta]
+version = "6.8.2"
+maintainer = "vaelixd <vaelixd@proton.me>"
+sources = [
+  "https://github.com/Duncaen/OpenDoas/archive/refs/tags/v6.8.2.tar.gz",
+]
+checksums = ["56a116e8617fc99184f3c919f591493b76d6511c2a79328f6f13a46ef2df0ae0"]
+
+[deps]
+
+[mkdeps]
+binutils = "*"
+make = "*"
+gcc = "*"

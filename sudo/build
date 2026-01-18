@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+./configure \
+  --prefix=/usr \
+  --without-pam
+make
+make DESTDIR=$1 install
