@@ -6,3 +6,6 @@
   --with-timestamp
 make
 make DESTDIR=$1 install
+
+mkdir -pv $1/etc
+mv doas.conf $1/etc/doas.conf
