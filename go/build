@@ -1,14 +1,6 @@
 #!/bin/sh -e
 
-## This build currently only works for amd64/x86_64 systems
-
-mkdir -pv "$1/usr/bin"
-mv src/go "$1/usr/bin/go"
-
-# Move into the target source directory
 cd src
 
-# Build the target Go version and move it to '/usr/bin'
-GOROOT_BOOTSTRAP="$1/usr" ./make.bash
-mv "$HOME/go/bin/*" "$1/usr/bin"
-rm -rf "$HOME/go"
+GOROOT_BOOTSTRAP="go/" ./make.bash
+mv "bin/*" "$1/usr/bin"
