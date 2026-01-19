@@ -2,6 +2,7 @@
 
 ./configure \
   --prefix=/usr \
-  --without-pam
+  --without-bash-malloc
+
 make
-make DESTDIR=$1 install
+make DESTDIR="$1" install
