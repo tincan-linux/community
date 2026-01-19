@@ -4,6 +4,6 @@ export PKG_CONFIG_ALLOW_CROSS=1
 export PKG_CONFIG_ALL_STATIC=1
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig
 
-cmake .
-make --prefix=/usr
+cmake -DCMAKE_INSTALL_PREFIX=/usr .
+make
 make DESTDIR="$1" install
