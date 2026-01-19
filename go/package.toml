@@ -3,7 +3,7 @@ version = "1.25.5"
 maintainer = "vaelixd <vaelixd@proton.me>"
 sources = [
   "https://go.dev/dl/go1.25.5.src.tar.gz",
-  "files/go1.24.12.linux-amd64.tar.gz",
+  "tar+https://go.dev/dl/go1.24.12.linux-amd64.tar.gz",
 ]
 checksums = [
   "2678ba054053bafd10f56c003254764d06456fdf6f5230234a716fea314a60f2",
