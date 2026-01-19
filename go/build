@@ -1,6 +1,25 @@
 #!/bin/sh -e
 
+mkdir -pv "$1/goboot"
+mkdir -pv "$1/lib/go"
+mkdir -pv "$1/share/doc/go"
+
+tar -xvf go1.24.12.linux-amd64.tar.gz -C $1/goboot --strip-components=1
 cd src
 
-GOROOT_BOOTSTRAP="go/" ./make.bash
-mv "bin/*" "$1/usr/bin"
+export GOROOT_BOOTSTRAP="$1/goboot"
+export GOROOT_FINAL="$1/lib/go"
+./make.bash -v
+
+cd ..
+
+cp -avf bin pkg src lib misc api test "$1/lib/go"
+cp -rvf doc/* "$1/share/doc/go/"
+
+mkdir -pv "$1/bin"
+ln -svf "/lib/go/bin/go" "$1/bin/go"
+ln -svf "/lib/go/bin/gofmt" "$1/bin/gofmt"
+
+ln -svf "/lib/go/doc" "$1/share/doc/go"
+
+rm -rvf "$1/goboot"
