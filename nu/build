@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+cargo build \
+  --release \
+  --workspace \
+  --verbose
+
+mkdir -pv "$1/bin"
+
+cp -rvf "target/release/nu*" "$1/bin/"
