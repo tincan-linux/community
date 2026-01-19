@@ -1,0 +1,15 @@
+[meta]
+version = "1.25.5"
+maintainer = "vaelixd <vaelixd@proton.me>"
+sources = [
+  "https://go.dev/dl/go1.25.5.src.tar.gz",
+  "tar+https://go.dev/dl/go1.24.12.linux-amd64.tar.gz",
+]
+checksums = [
+  "2678ba054053bafd10f56c003254764d06456fdf6f5230234a716fea314a60f2",
+  "2065b30afa6801754bf795ec5c1a775629d8fb1f41888a7b9aebd1bcd3528446",
+]
+
+[deps]
+
+[mkdeps]
