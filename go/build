@@ -2,7 +2,8 @@
 
 ## This build currently only works for amd64/x86_64 systems
 
-mv go $1/usr/bin
+mkdir -pv "$1/usr/bin"
+mv src/go "$1/usr/bin/go"
 
 # Move into the target source directory
 cd src
