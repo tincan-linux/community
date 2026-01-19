@@ -13,3 +13,4 @@ checksums = [
 [deps]
 
 [mkdeps]
+bash = "*"
