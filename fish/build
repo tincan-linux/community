@@ -5,5 +5,5 @@ export PKG_CONFIG_ALL_STATIC=1
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig
 
 cmake .
-make
+make --prefix=/usr
 make DESTDIR="$1" install
