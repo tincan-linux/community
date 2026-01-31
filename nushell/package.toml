@@ -1,0 +1,19 @@
+[meta]
+version = "0.110.0"
+maintainer = "vaelixd <vaelixd@proton.me>"
+sources = [
+  "https://github.com/nushell/nushell/archive/refs/tags/0.110.0.tar.gz",
+]
+checksums = ["c41c02e0d14cdfe5e3b74e5d24993959600b347d1f85e01d7e0a7e47ed56dc5a"]
+
+[deps]
+
+[mkdeps]
+rustup = "*"
+gcc = "*"
+openssl = "*"
+cmake = "*"
+curl = "*"
+pkgconf = "*"
+libxcb = "*"
+libX11 = "*"

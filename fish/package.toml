@@ -1,0 +1,14 @@
+[meta]
+version = "4.3.3"
+maintainer = "vaelixd <vaelixd@proton.me>"
+sources = [
+  "https://github.com/fish-shell/fish-shell/releases/download/4.3.3/fish-4.3.3.tar.xz",
+]
+checksums = ["6f99f9f44e7946738281be3e049bc0fad479d28210fdca67ee234e96ed61957d"]
+
+[deps]
+
+[mkdeps]
+rustup = "*"
+cmake = "*"
+gcc = "*"
