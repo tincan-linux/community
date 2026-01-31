@@ -2,13 +2,16 @@
 Pull requests are only for submitting new packages or for updating packages. If you found a bug in a package,
 open an issue and ping the maintainer (you can find their github username by going to the package directory
 and seeing who has been making commits to that package).
+
+Please only include one package per PR!
 -->
 
 
 ### Package manifest
 
 <!--
-Hint: you can get this from /var/cache/arc/installed/<pkg_name>@<pkg_version>
+Hint: you can get this by reading the contents of /var/cache/arc/installed/<pkg_name>@<pkg_version>. It
+should be a list of files and directories that are installed by the package.
 -->
 
 <details><summary>Manifest</summary>
